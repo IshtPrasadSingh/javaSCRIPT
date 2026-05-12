@@ -1,0 +1,107 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//ARRAY KEYWORDS
+
+let arr=[1,2,3,4,5]
+// console.log(arr.length);
+
+// arr.push(6) //adds 6 to last in ARR
+// console.log(arr);
+
+// arr.pop() // removes last element
+// console.log(arr);
+
+// arr.unshift(0) // adds 0 to first index
+// console.log(arr,"unshift");
+
+// arr.shift() //removes 1st element
+// console.log(arr);
+
+// console.log(arr.includes(11),"lemon");
+// console.log(arr.indexOf(4));
+
+// let data= arr.find(function(a){
+//     return a==5
+// })
+
+// FOREACH
+arr.forEach((a,b,c)=>{
+    console.log(a,'foreach'); // check for a,b,c all
+})
+
+//MAP function (same as foreach but this returns)
+
+let arr1=arr.map((a,b,c)=>{
+   // console.log(b,'map'); //check for all
+    return a
+})
+console.log(arr1,'lemon')
+
+// FILTER function (this can also return but can be given conditions)
+
+//let filterV= arr.filter((a,b,c)=>{
+//     return a>2   //removes elements less than 2
+// })
+// console.log(filterV)
+
+//REDUCE function  (in this we take 1st element as A and 2nd as B and then the b iterates one by one and puts value according to the formula or return value)
+// let sum= arr.reduce((a,b,c,d)=>{
+//     console.log(a, 'mai a hu');
+//     console.log(b,'mai b hu');
+
+//     return a+b // a= a+b
+// },10)  //here we have declared a value whhich will be A otherwise the 1st element is taken as A
+//console.log(sum);
+
+//Question
+arr=[1,2,3,5,53,6,3,6,3,345,2]
+let filterX= arr.filter((a,b,c)=>{
+    return a>2
+})
+console.log(filterX,'above 2 elements')
+
+let filterY= arr.filter((a,b,c)=>{
+    return  a%2==0
+})
+console.log(filterY, 'even only')
+
+let SUM= arr.reduce((a,b,c,d)=>{
+
+    return a+b
+})
+console.log(sum,'Addition')
+
+//Hoisting
+
+//var and let case
+
+// console.log(a);
+// var a=5
+
+// console.log(b);
+// let b=10
+
+//function case
+
+// sum()
+// var sum=()=>{
+//     console.log("hello");
+
+// }
+
+// sume()
+// let sume=()=>{
+//     console.log("hello");
+// }
+
+
+
+    </script>
+</body>
+</html>

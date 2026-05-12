@@ -1,0 +1,86 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       // OBJECT MAKING and methods(functions)
+// let student={  //student is an object here
+//     id:1,  //property: .....
+//     name:"jay",
+//     isPass:true,
+//     sum:function(){  // it is a function so it needs to be called
+//         console.log("hello");
+//         console.log(this)  //this is a keyword inside a function and this keyword calls object directly and is equal to window keyword if not declared inside an object
+//     }
+// }
+// //now adding 'for in' loop in function which will call everyone in object
+
+// student.sum()
+//    'use strict'  //if strict mode is on then it will give undefined 
+// function sum(){
+//     console.log(this)  //if "this" is in function without any object then it will point to window
+// }
+// sum()
+
+// arrow function ke andar this keyword kam nhi krta
+//    var id=20
+//    let student={
+//     id:2,
+//     name:"jay",
+//     isPass:true,
+//     sum:function(){ // without arrow function
+//         console.log(this.id)  //it will call the object and print the id value
+//    let a=()=>{  // arrow.....double functions in a single object
+// console.log(this.id);
+// }
+// a()
+//  }
+//    }
+// student.sum()
+
+//ARROW FUNCTION
+// var id=20
+// let student={
+//     id:3,
+
+// }
+
+//GEC
+// function outer(){
+//     let userName="om"
+//     function inner(){
+//         console.log(userName);
+
+//     }
+//     //inner()
+//     return inner
+// }
+// let fn=outer()
+// fn()
+
+//funtion ke andar let keyword ko bahar access nhi kar sakte 
+// let b=30 //global function ...function ke andar nhi hai to access ho jayega
+// {
+//     var a=5  // var keyword ho jata hai access
+//     let b=10
+//     const c=40
+// }
+// console.log(a); // as it is var , it will be accessed
+// console.log(b); // global b will be declared
+//console.log(c); // not defined
+
+// function sum(){
+//     let a=5  //again not defined
+// }
+// console.log(a);
+
+// sum()
+
+
+
+    </script>
+</body>
+</html>

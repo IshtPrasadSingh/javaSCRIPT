@@ -1,0 +1,100 @@
+
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculator Using Input Tags</title>
+
+<style>
+    body {
+        background: #1e1e2f;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-family: Arial, sans-serif;
+    }
+
+    form {
+        background: #2c2c3e;
+        padding: 20px;
+        border-radius: 20px;
+        width: 320px;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    }
+
+    input[type="text"] {
+        width: 94%;
+        height: 70px;
+        font-size: 2rem;
+        text-align: right;
+        margin-bottom: 20px;
+        border: none;
+        border-radius: 12px;
+        padding: 10px;
+        background: #111;
+        color: white;
+    }
+
+    input[type="button"] {
+        width: 60px;
+        height: 50px;
+        margin: 5px;
+        border: none;
+        border-radius: 13px;
+        font-size: 1.2rem;
+        cursor: pointer;
+        background: #3a3a4f;
+        color: white;
+    }
+
+    .operator {
+        background: orange;
+    }
+
+    .equal {
+        background: green;
+        width: 150px;
+    }
+
+    .clear {
+        background: red;
+    }
+</style>
+</head>
+<body>
+
+<form>
+    <input type="text" placeholder="0">
+
+    <input type="button" value="AC" class="clear">
+    <input type="button" value="%">
+    <input type="button" value="/" class="operator">
+    <input type="button" value="*" class="operator"><br>
+
+    <input type="button" value="7">
+    <input type="button" value="8">
+    <input type="button" value="9">
+    <input type="button" value="-" class="operator"><br>
+
+    <input type="button" value="4">
+    <input type="button" value="5">
+    <input type="button" value="6">
+    <input type="button" value="+" class="operator"><br>
+
+    <input type="button" value="1">
+    <input type="button" value="2">
+    <input type="button" value="3">
+    <input type="button" value="=" class="equal"><br>
+
+    <input type="button" value="0">
+    <input type="button" value=".">
+</form>
+
+</body>
+</html>
+
+</body>
+</html>
