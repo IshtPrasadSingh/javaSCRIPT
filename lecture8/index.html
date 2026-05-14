@@ -1,0 +1,87 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <script>
+
+        // like the instagram algo we are creating two steps in two functions
+        // and then calling them,,normally the captions will be called first as it is shorter...for example hii will be even faster than the  captions.....
+        // so to avoid the timing issue we  use 'async function' which calls everyone at same time and await function in the steps
+        // then the  issue will be resolved
+
+//   function step1(){
+//     return new Promise((res,rej)=>{
+//         setTimeout(()=>{
+//             console.log("selcteddd");
+//             res()
+//         },5000)
+//     })
+//   }
+// function step2(){
+//     return new Promise((res,rej)=>{
+//         setTimeout(()=>{
+//             console.log("captions");
+//             res()
+//         },5000)
+//     })
+// }
+
+// //to call the function we need diff func
+// async function call() {
+//     await step1()
+//    // console.log("hiii");
+
+//     await step2()
+    
+// }
+// call()
+
+
+
+
+
+
+// let promise = new Promise((res,reject)=>{
+//    // res()
+//     reject()
+//     // setTimeout(() => {
+//     //     res()
+//     // },3000)
+        
+// })
+// promise.then(()=>{      // thrn is used for resolve
+//     console.log("doone");  
+// }).catch(()=>{       // catch is used for reject
+//     console.log("errr");
+// })
+// console.log(promise);
+
+
+// let promise = new Promise((res,reject)=>{
+//     console.log("hello");
+// })
+// console.log("hii");
+
+         // Api  application programming interface
+     
+         fetch("https://jsonplaceholder.typicode.com/todos").then((data)=>{
+            //console.log(data);
+            return data.json()
+         }).then((val)=>{
+            console.log(val);
+
+         })
+         .catch((err)=>{
+            console.log(err);
+         })
+         
+
+
+
+
+
+    </script>
+</body>
+</html>
